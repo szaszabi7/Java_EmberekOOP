@@ -10,6 +10,8 @@ public class Main {
         System.out.println(e1);
         System.out.println(e2);
         System.out.println(e3);
+        System.out.printf("%s - Életkor %d", e0, e0.getEletkor());
+        System.out.printf("%s - Életkor %d", e2, e2.getEletkor());
 
     }
 }
