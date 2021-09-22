@@ -40,6 +40,6 @@ public class Ember {
 
     @Override
     public String toString() {
-        return String.format("%s - %s - %s", this.nev, this.szulDatum, this.szulHely);
+        return String.format("%30s %-10s - %-20s", this.nev, this.szulDatum, this.szulHely);
     }
 }
