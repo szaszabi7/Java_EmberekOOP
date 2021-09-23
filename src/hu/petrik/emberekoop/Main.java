@@ -11,7 +11,8 @@ public class Main {
         //emberOsztalyTesztje(e0,e1,e2,e3);
 
         Ember[] emberTomb = new Ember[]{e0,e1,e2,e3,e4};
-
+        Emberek emberek = new Emberek(emberTomb);
+        System.out.println(emberek);
 
     }
 
