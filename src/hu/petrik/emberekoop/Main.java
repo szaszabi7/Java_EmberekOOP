@@ -12,7 +12,8 @@ public class Main {
 
         Ember[] emberTomb = new Ember[]{e0,e1,e2,e3,e4};
         Emberek emberek = new Emberek(emberTomb);
-        System.out.println(emberek);
+        Emberek emberek2 = new Emberek("emberek.txt");
+        System.out.println(emberek2);
 
     }
 
