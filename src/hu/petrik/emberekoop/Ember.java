@@ -9,6 +9,10 @@ public class Ember {
     private String szulDatum;
     private String szulHely;
 
+    public String getNev(){
+        return nev;
+    }
+
     public Ember(String nev, String szulDatum, String szulHely) {
         this.nev = nev;
         this.szulDatum = szulDatum;
@@ -34,7 +38,7 @@ public class Ember {
         LocalDate maiDatum = LocalDate.now();
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-M-d");
         LocalDate szuletesiDatum = LocalDate.parse(szulDatum,format);
-        Period kulonbseg = Period.between(maiDatum, szuletesiDatum);
+        Period kulonbseg = Period.between(szuletesiDatum, maiDatum);
         return kulonbseg.getYears();
     }
 
